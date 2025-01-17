@@ -79,6 +79,7 @@ html, body {
   align-items: center;
   border-radius: 0;
   position: relative;
+  /* margin-top:0px; */
 }
 
 .right-panel h2 {
