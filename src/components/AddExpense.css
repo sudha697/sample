@@ -1,0 +1,183 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* General Layout */
+.expense-page {
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  display: flex;
+  flex-direction: column;
+ margin-left:-40px;
+ 
+ 
+}
+
+/* Header Styling */
+.header {
+  height: 80px; /* Increased header height */
+  background: linear-gradient(to bottom right, #f5f8ff, #216b88);
+  color: white;
+  padding: 15px 30px; /* Increased padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 30px; */
+}
+
+.header .logo h1 {
+  font-size: 28px; /* Increased font size */
+  margin: 0;
+}
+
+.header .logo span {
+  font-size: 14px; /* Slightly larger font size */
+  margin-left: 12px;
+}
+
+/* Main Layout */
+.body-container {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 80px); /* Adjusted for increased header height */
+  
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 200px; /* Maintained the sidebar width */
+  background: linear-gradient(to bottom, #f5f8ff, #216b88);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+ 
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar ul li {
+  padding: 18px;
+  margin: 12px 0;
+  background-color: transparent;
+  border-radius: 20px; /* Increased border radius */
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #216b88;
+}
+
+/* Form Container Styling */
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the form horizontally */
+  justify-content: flex-start;
+  background: #f8f9fc;
+  padding: 30px;
+}
+
+.form-container h1 {
+  color: #216b88;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin to move form closer */
+}
+
+/* Form Styling */
+form {
+  max-width: 800px; /* Increased form width */
+  width: 100%; /* Ensure the form is responsive */
+  background: white;
+  padding: 50px;
+  border-radius: 30px; /* Rounded all corners */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 20px; /* Negative margin to pull form closer to the title */
+}
+/* Input Row Styling */
+form .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Increased gap */
+  margin-bottom: 20px;
+}
+
+form .row input,
+form .row select {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Rounded edges for consistency */
+  background-color: #f1f1f1;
+  font-size: 16px; /* Consistent font size */
+}
+
+form .row input[type="file"] {
+  padding: 0;
+}
+
+form .row select {
+  appearance: none; /* Removes default dropdown styling */
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+}
+
+form button {
+  padding: 15px;
+  background-color: #216b88;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form button:hover {
+  background-color: #0f1c44; /* Slightly darker shade on hover */
+}
+
+/* Logo Styling */
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align the logo to the left */
+  height: 100%;
+  margin-left:1px; /* Add some spacing from the left edge */
+}
+
+.header .logo img {
+  height: 60px; /* Adjust size of the logo */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly without distortion */
+  border-radius: 15px; /* Add curved edges to the logo */
+  border: 2px solid white; /* Optional: Add a border around the logo */
+  margin-left:-40px;
+}
